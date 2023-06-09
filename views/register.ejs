@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body> 
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Groupomania</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/">accueil</a></li>
+            <li><a href="/login">login</a></li>
+            <li><a href="/register">register</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <form class="col s12" action="/auth/register"  method="POST">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="First_Name" type="text" class="validate" name="First_Name">
+              <label for="First_Name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="Last_Name" type="text" name="Last_Name" class="validate">
+              <label for="Last_Name">Last Name</label>
+            </div>
+          </div>
+          
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" name="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="passwordConfirm" type="password" name="passwordConfirm" class="validate">
+                <label for="passwordConfirm">passwordConfirm</label>
+              </div>
+
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email"  name="Email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+         
+          <button type="submit" class="btn btn-primary">register</button>
+        </form>
+      </div>
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+</html>
